@@ -59,19 +59,10 @@
       <div class="container">
 
         <h1 class="section-text">Эффективные решения <br> для вашего бизнеса</h1>
-        <button class="section-button" type="button">Заказать услугу</button>
+        <button data-modal-open class="section-button" type="button">Заказать услугу</button>
 
       </div>
-      <div class="backdrop is-hidden">
-        <div class="modal">
-          <!-- <button class="close-item">
-            <div class="close-btn">
-              <img src="./img/close-black.svg" alt="">
-            </div>
-          </button> -->
 
-        </div>
-      </div>
     </section>
     <section class="second-section">
       <div class="container">
@@ -414,6 +405,17 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-item" data-modal-close>
+        <div class="close-btn">
+          <img src="./img/close-black.svg" alt="">
+
+      </button>
+    </div>
+  </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
