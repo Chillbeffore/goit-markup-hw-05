@@ -98,13 +98,16 @@ section {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  transition: 250ms;
 }
 .nav-item.current::after {
   display: block;
   content: "";
   height: 4px;
+  border-bottom: 2px;
   background-color: var(--accent-color);
   border-radius: 2px;
+  bottom: -2px;
 }
 .nav-links .nav-item + .nav-item {
   margin-left: 50px;
@@ -142,6 +145,7 @@ section {
   padding: 32px 0px;
   display: flex;
   justify-content: center;
+  transition: 250ms;
 }
 .mail-icon {
   margin-right: 10px;
@@ -264,6 +268,7 @@ section {
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-section .section-button:hover,
 .first-section .section-button:focus {
@@ -382,12 +387,17 @@ section {
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
   margin: 0;
-  padding: 27px 73px;
+  padding: 0;
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .photo-overlay {
   position: relative;
 }
 .text-overlay {
+  display: flex;
   width: 370px;
   height: 70px;
   position: absolute;
@@ -489,6 +499,7 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  transition: 250ms;
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus {
@@ -537,9 +548,12 @@ section {
   justify-content: center;
   width: 100%;
   height: 100%;
+  outline: transparent;
+  transition: 250ms;
 }
 .company-card-icon {
   fill: var(--icon-color);
+  transition: 250ms;
 }
 
 .company-cards-link:hover .company-card-icon,
@@ -565,6 +579,7 @@ section {
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
+  transition: 250ms;
 }
 .footer .footer-link {
   display: inline-block;
@@ -592,6 +607,7 @@ section {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  transition: 250ms;
 }
 .links .map-link:hover,
 .links .map-link:focus {
@@ -645,6 +661,7 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  transition: 250ms;
 }
 .fotter-masters-soc-icon {
   fill: var(--white-color);
@@ -664,9 +681,10 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.header {
+.header.portfolio {
   border-bottom: 1px solid #ececec;
 }
+
 .buttons {
   padding-left: 0px;
   margin: 0px;
@@ -701,6 +719,7 @@ section {
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+  transition: 250ms;
 }
 .button-one.current {
   background-color: var(--accent-color);
@@ -729,6 +748,7 @@ section {
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+  transition: 250ms;
 }
 .button-two:hover,
 .button-two:focus {
@@ -752,6 +772,7 @@ section {
   border: 0em;
   padding: 6px 22px;
   text-align: center;
+  transition: 250ms;
 }
 .button-three:hover,
 .button-three:focus {
@@ -775,6 +796,7 @@ section {
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+  transition: 250ms;
 }
 .button-four:hover,
 .button-four:focus {
@@ -796,6 +818,7 @@ section {
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
+  transition: 250ms;
 }
 .button-five:hover,
 .button-five:focus {
@@ -844,6 +867,10 @@ section {
 }
 .photo-cards:hover .action,
 .photo-cards:focus .action {
+  transform: translateY(0%);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.photo-cards .link-focus:focus .action {
   transform: translateY(0%);
   background-color: rgba(33, 150, 243, 0.9);
 }
