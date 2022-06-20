@@ -542,8 +542,6 @@ section {
   width: 170px;
   height: 92px;
   margin-left: 30px;
-
-  border-radius: 4px;
 }
 .company-card-item:first-child {
   margin-left: 0;
@@ -555,6 +553,7 @@ section {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   outline: transparent;
   transition-property: color, background-color;
   transition-duration: 250ms;
@@ -588,7 +587,6 @@ section {
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms;
 }
 .footer .footer-link {
   display: inline-block;
@@ -603,11 +601,25 @@ section {
   font-style: normal;
   padding-left: 0px;
   margin: 0px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .logo-accent {
   color: var(--white-color);
 }
-
+.link-mail {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .links .map-link {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -624,8 +636,12 @@ section {
 .links .map-link:focus {
   color: var(--accent-color);
 }
-.links .link:hover,
-.links .link:focus {
+.links .link-mail:hover,
+.links .link-mail:focus {
+  color: var(--accent-color);
+}
+.links .link-tel:hover,
+.links .link-tel:focus {
   color: var(--accent-color);
 }
 .contact-links .links {
@@ -885,8 +901,8 @@ section {
   line-height: 28px;
   color: var(--white-color);
   letter-spacing: 0.03em;
-  transform: translateY(100%);
-  transition-property: color, background-color;
+  transform: translateY(101%);
+  transition-property: transform, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
